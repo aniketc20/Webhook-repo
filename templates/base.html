@@ -1,0 +1,15 @@
+{% block content %}
+
+{% endblock %}
+<a href="/">User</a>
+<a href="/admin">Admin</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<h2><u>The page will load any data if any updates happens in the next 15 seconds</u> </h2>
+    <p style="font-size: x-large;">
+
+    </p>
+    <script>
+        {% include 'ajax_setup.js' %}
+        {% include 'ajax.js' %}
+    </script>

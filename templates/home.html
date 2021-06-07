@@ -1,12 +1,4 @@
-<h1 style="text-align: center;">GitHub WebHook Demonstration using Flask</h1>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<meta http-equiv="refresh" content="15">
-    {% for i in data %}
-            <li style="font-size: large; font-family: 'Lucida Sans Unicode';"><b>{{ i.author }} {{ i.action }}  </b>{{ i.from_branch }} {{ i.to_branch }} <b><span id="{{ i._id }}"></span></b></li>
-            <br>
-            <script>
-            var convertdLocalTime = new Date('{{ i.time }}');
-            pushed_date = convertdLocalTime.toLocaleTimeString();
-            document.getElementById("{{ i._id }}").innerHTML = convertdLocalTime;
-            </script>
-    {% endfor %}
+{% extends 'base.html' %}
+{% block content %}
+<h1 style="text-align: center;">GitHub WebHook Demonstration using Flask, Super Admin Section</h1>
+{% endblock %}
